@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #473e96;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    color: #fffcfc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: calc(50vh - 195px);
+    margin-bottom: calc(50vh - 195px);
+  }
+  
+  .box1, .box2, .box3 {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  .box1 {
+    background-color: #62a7a7;
+  }
+  .box2 {
+    background-color: rgb(125, 65, 182);
+  }
+  .box3 {
+    background-color: rgb(226, 43, 113);
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .box1, .box2, .box3 {
+      width: 90%;
+    }
+  }</style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="pngegg.png" alt="logo" width="70px" height="70px">
+    </div>
+    <nav>
+      <a href="#">Enlace 1</a>
+      <a href="#">Enlace 2</a>
+      <a href="#">Enlace 3</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </section>
+
+</body>
+</html>
